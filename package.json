@@ -2,8 +2,8 @@
   "name": "backend-boilerplate",
   "version": "0.0.1",
   "scripts": {
-    "build": "cd app && npm run build",
-    "start": "cd app && npm run start",
+    "build": "cd app && ./gradlew build",
+    "start": "java -jar app/build/libs/app-0.0.1-SNAPSHOT.jar",
     "test": "cypress run"
   },
   "devDependencies": {

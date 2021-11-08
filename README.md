@@ -12,6 +12,7 @@ Use it for setting up a take-home interview assignment or a portfolio project.
 
 - Java 11
 - Spring Boot 2.4.2
+- SQLite 3.36.0.3
 - Gradle 6.7.1
 - Cypress
 - GitHub Actions

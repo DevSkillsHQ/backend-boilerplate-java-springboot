@@ -10,10 +10,10 @@ Use it for setting up a take-home interview assignment or a portfolio project.
 
 ## Tech Stack
 
-- Java 11
-- Spring Boot 2.4.2
+- Java 17
+- Spring Boot 2.6.3
 - SQLite 3.36.0.3
-- Gradle 6.7.1
+- Gradle 7.3.3
 - Cypress
 - GitHub Actions
 

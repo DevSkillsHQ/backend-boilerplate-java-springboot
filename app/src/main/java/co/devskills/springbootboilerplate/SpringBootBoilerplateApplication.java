@@ -1,13 +1,13 @@
-package co.devskills.app;
+package co.devskills.springbootboilerplate;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AppApplication {
+public class SpringBootBoilerplateApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AppApplication.class, args);
+		SpringApplication.run(SpringBootBoilerplateApplication.class, args);
 	}
 
 }

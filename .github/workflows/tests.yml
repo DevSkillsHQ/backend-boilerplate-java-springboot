@@ -16,10 +16,10 @@ jobs:
       - name: Fetch apiUrl
         run: echo ::set-output name=apiUrl::$(jq -r .env.apiUrl cypress.json)/ping
         id: fetchApiUrl
-      - name: Check Java version
-        run: java --version
-      - name: Check SDK java candidates
-        run: sdk list java
+      - name: Install SDK
+        run: curl -s "https://get.sdkman.io" | bash | y && source "$HOME/.sdkman/bin/sdkman-init.sh"
+      - name: Check SDK
+        run: sdk version
       - name: Run tests
         uses: cypress-io/github-action@v2
         with:

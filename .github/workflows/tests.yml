@@ -18,6 +18,8 @@ jobs:
         id: fetchApiUrl
       - name: Check Java version
         run: java --version
+      - name: Check SDK java candidates
+        run: sdk list java
       - name: Run tests
         uses: cypress-io/github-action@v2
         with:

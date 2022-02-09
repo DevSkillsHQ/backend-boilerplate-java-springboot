@@ -12,10 +12,6 @@ bootJar {
     enabled = false
 }
 
-jar {
-    enabled = true
-}
-
 repositories {
 	mavenCentral()
 }
@@ -30,4 +26,14 @@ dependencies {
 
 tasks.named('test') {
 	useJUnitPlatform()
+}
+
+jar {
+	enabled = true
+    manifest {
+        attributes(
+			    'Class-Path': configurations.runtimeClasspath.collect{it.toURI().toString()}.join(' '),
+                'Main-Class': 'co.devskills.springbootboilerplate.SpringBootBoilerplateApplication'
+        )
+    }
 }

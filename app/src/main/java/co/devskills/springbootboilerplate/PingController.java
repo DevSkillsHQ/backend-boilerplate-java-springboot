@@ -1,4 +1,4 @@
-package co.devskills.app;
+package co.devskills.springbootboilerplate;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;

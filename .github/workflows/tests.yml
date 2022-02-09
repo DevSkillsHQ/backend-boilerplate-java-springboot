@@ -16,6 +16,8 @@ jobs:
       - name: Fetch apiUrl
         run: echo ::set-output name=apiUrl::$(jq -r .env.apiUrl cypress.json)/ping
         id: fetchApiUrl
+      - name: Check Java version
+        run: java --version
       - name: Run tests
         uses: cypress-io/github-action@v2
         with:

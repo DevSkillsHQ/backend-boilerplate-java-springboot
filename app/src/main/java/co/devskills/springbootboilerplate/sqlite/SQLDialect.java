@@ -1,5 +1,3 @@
-package co.devskills.app.sqlite;
- 
 import java.sql.Types;
  
 import org.hibernate.dialect.Dialect;

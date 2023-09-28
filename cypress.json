@@ -1,5 +1,5 @@
 {
   "env": {
-    "apiUrl": "http://host.docker.internal:8080"
+    "apiUrl": "http://localhost:8080"
   }
 }

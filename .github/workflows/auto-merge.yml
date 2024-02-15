@@ -11,6 +11,11 @@ jobs:
   test-for-workflow:
     runs-on: ubuntu-20.04
     steps:
+      - name: Set up JDK 17
+        uses: actions/setup-java@v2
+        with:
+          java-version: '17'
+          distribution: 'temurin'
       - name: Checkout
         uses: actions/checkout@v4
       - name: Run tests

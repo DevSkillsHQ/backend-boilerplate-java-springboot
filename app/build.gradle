@@ -22,8 +22,13 @@ dependencies {
 	implementation 'org.xerial:sqlite-jdbc:3.51.1.0'
 	implementation 'org.hibernate:hibernate-core:7.2.0.Final'
 	implementation 'org.hibernate.orm:hibernate-community-dialects'
-
+	implementation 'jakarta.validation:jakarta.validation-api:3.0.2'
+	implementation 'org.projectlombok:lombok:1.18.30'
+	compileOnly 'org.projectlombok:lombok:1.18.30'
+	annotationProcessor 'org.projectlombok:lombok:1.18.30'
+	runtimeOnly 'org.springframework.boot:spring-boot-devtools'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
 }
 
 tasks.named('test') {

@@ -3,7 +3,17 @@ updates:
   - package-ecosystem: "gradle"
     directory: "/app"
     schedule:
-      interval: "daily"
-    labels:
-      - "gradle"
-      - "dependencies"
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    groups:
+      spring-boot:
+        patterns:
+          - "org.springframework.boot*"
+          - "io.spring.dependency-management*"
+          - "gradle-wrapper"
+        update-types:
+          - "major"
+      minor-and-patch:
+        update-types:
+          - "minor"
+          - "patch"

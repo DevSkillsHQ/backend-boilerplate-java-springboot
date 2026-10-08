@@ -22,7 +22,7 @@ jobs:
       contents: read
       packages: read
     container:
-      image: ghcr.io/devskillshq/boilerplate-base-image:latest
+      image: ghcr.io/devskillshq/boilerplate-base-image:universal-6
       credentials:
         username: ${{ github.actor }}
         password: ${{ secrets.github_token }}
